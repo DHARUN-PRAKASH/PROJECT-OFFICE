@@ -1,0 +1,229 @@
+###
+
+POST  http://localhost:1234/api/publish
+Content-Type: application/json
+
+{
+    "academic_year":"2023",
+    "semester":"two",
+    "name_of_the_faculty":"visvak",
+    "name_of_the_student":"Vetrikanth",
+    "paper_presentation":"mahendra",
+    "date_of_contest":"12-2-2024",
+    "no_of_beneficiaries":"one",
+    "cetrificate_pdf":"Signup"
+}
+
+
+###
+
+POST  http://localhost:1234/users
+Content-Type: application/json
+
+{
+    "username":"22ad105",
+    "password":"Vetree@1209"
+}
+
+
+###
+GET http://localhost:1234/users
+###
+
+
+###
+POST http://localhost:1234/submitForm
+Content-Type: application/json
+
+{
+            "fy_year": "2024",
+            "month": "july",
+            "head_cat":"a",
+            "sub_cat": "a1",
+            "selectedDate":"10",
+            "received_by": [{"emp_id": 4,"emp_name": "Moulee","emp_status": "Active","_id":"660e72c923879451612b8c58"},{"emp_id": 4,"emp_name": "Moulee","emp_status": "Active","_id":"660e72c923879451612b8c58"}],
+            "particulars":"aa",
+            "bill_no":"11",
+            "amount":"1111",
+            "departments": ["aids","cse"],
+            "vehicles": ["bus","bike"]
+            
+}
+
+####
+
+###
+GET http://localhost:1234/gethead_cat
+
+####
+###
+GET http://localhost:1234/getreceived_by
+
+####
+
+###
+GET http://localhost:1234/getdepartment
+
+####
+
+###
+GET http://localhost:1234/getvehicle
+
+####
+
+###
+GET http://localhost:1234/getformmonth
+
+####\
+
+###
+GET http://localhost:1234/getformyear
+
+####
+
+###
+GET http://localhost:1234/gethead_cat_form
+
+####
+
+###
+GET http://localhost:1234/getsub_cat_form
+
+####
+
+###
+GET http://localhost:1234/getamount_form
+
+####
+
+###
+GET http://localhost:1234/getvehicles_form
+
+####
+
+
+###
+GET http://localhost:1234/getfy_year_form
+
+####
+
+###
+GET http://localhost:1234/table
+
+####
+
+
+###
+GET http://localhost:1234/getparticulars_form
+
+####
+
+###
+GET http://localhost:1234/getemp_id_form
+
+####
+
+###
+GET http://localhost:1234/getfy_year
+
+####
+
+###
+GET http://localhost:1234/getfy_year_form
+
+####
+
+###
+GET http://localhost:1234/getmonth_form
+
+####
+
+###
+GET http://localhost:1234/getfy_year_admin
+
+####
+
+###
+GET http://localhost:1234/getfy_year_admin
+
+
+###
+POST  http://localhost:1234/activateYear
+Content-Type: application/json
+
+{
+    "fy_name":2030
+}
+
+####
+
+###
+POST  http://localhost:1234/lockYear
+Content-Type: application/json
+
+{
+    "fy_name":2030
+}
+
+####
+
+###
+POST  http://localhost:1234/activateMonth
+Content-Type: application/json
+
+{
+    "month_name":"December"
+}
+
+####
+
+###
+POST  http://localhost:1234/lockMonth
+Content-Type: application/json
+
+{
+    "month_name":"December"
+}
+
+####
+###
+GET http://localhost:1234/username
+
+
+###
+
+###
+GET http://localhost:1234/getvehicle_filter
+
+####
+
+###
+GET http://localhost:1234/gethead_cat_filter
+
+####
+
+###
+GET http://localhost:1234/getsub_cat_filter
+
+####
+
+###
+GET http://localhost:1234/getemployee_filter
+
+####
+
+###
+GET http://localhost:1234/getyear_filter
+
+####
+
+###
+GET http://localhost:1234/getfy_month_admin
+
+####
+#####
+POST http://localhost:1234/upload
+Content-Type: application/json
+{
+    "file_data":"Cdcjlvefcg"
+}
